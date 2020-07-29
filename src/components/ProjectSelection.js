@@ -1,23 +1,27 @@
 import React from 'react';
 
-const ProjectSelection = () => {
+import ProjectSelectionItem from './ProjectSelectionItem';
+
+const ProjectSelection = ({ projects, projectCategory, activeProject, setActiveProject }) => {
+  const toggleActiveProject = (project) => {
+    const updatedActiveProject = JSON.parse(JSON.stringify(activeProject));
+    updatedActiveProject[projectCategory] = project;
+
+    setActiveProject(updatedActiveProject);
+  };
+
   return (
     <div className="project-list">
-      <button className="project-list__item project-list__item--active">
-        <span className="project-list__item__company">Honda</span>
-        <span className="project-list__item__description">Motorcycles redesign</span>
-        <span className="project-list__item__date">2014</span>
-      </button>
-      <button className="project-list__item">
-        <span className="project-list__item__company">Honda</span>
-        <span className="project-list__item__description">Honda.ca redesign</span>
-        <span className="project-list__item__date">2014</span>
-      </button>
-      <button className="project-list__item">
-        <span className="project-list__item__company">Nerdblock</span>
-        <span className="project-list__item__description">Redesign</span>
-        <span className="project-list__item__date">2014</span>
-      </button>
+      {projects.map((project) => {
+        return (
+          <ProjectSelectionItem
+            key={`project-link-${project.id}`}
+            project={project}
+            active={(activeProject[projectCategory].id === project.id) ? true : false}
+            toggleActiveProject={toggleActiveProject}
+          />
+        );
+      })}
     </div>
   );
 };

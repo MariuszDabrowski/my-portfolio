@@ -342,6 +342,7 @@ header {
   width: 100%;
   text-align: left;
   cursor: pointer;
+  outline: none;
 }
 
 .project-list__item--active {
