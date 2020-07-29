@@ -38,7 +38,7 @@ p {
 
 header {
   height: 437px;
-  background: #2ecc71 url('../img/header-bg.png') center bottom repeat-x;
+  background: #2ecc71 url('./img/header-bg.png') center bottom repeat-x;
   background-size: 1000px auto;
   display: flex;
   align-items: center;
@@ -94,6 +94,7 @@ header {
 
 .about__bio {
   padding: 50px;
+  position: relative;
 }
 
 .about__bio h2 {
@@ -113,6 +114,7 @@ header {
   min-height: 200px;
   padding: 30px;
   width: 316px;
+  position: relative;
 }
 
 .info__item {
