@@ -20,13 +20,13 @@ const WorkTypeSelector = ({ projectCategory, toggleWorkCategory }) => {
 
   return (
     <div className="selector">
-      <button data-category="client" className="selector__item selector__item--active" onClick={toggleWorkType}>
-        <span className="selector__item__icon"></span>
-        <span className="selector__item__text">Client</span>
-      </button>
-      <button data-category="personal" className="selector__item" onClick={toggleWorkType}>
+      <button data-category="personal" className="selector__item selector__item--active" onClick={toggleWorkType}>
         <span className="selector__item__icon"></span>
         <span className="selector__item__text">Personal</span>
+      </button>
+      <button data-category="client" className="selector__item" onClick={toggleWorkType}>
+        <span className="selector__item__icon"></span>
+        <span className="selector__item__text">Client</span>
       </button>
     </div>
   );
