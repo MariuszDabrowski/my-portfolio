@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7da82c5c.chunk.css",
+    "main.js": "/static/js/main.dfc17df3.chunk.js",
+    "main.js.map": "/static/js/main.dfc17df3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.23041e79.js",
+    "runtime-main.js.map": "/static/js/runtime-main.23041e79.js.map",
+    "static/js/2.5ebeb40b.chunk.js": "/static/js/2.5ebeb40b.chunk.js",
+    "static/js/2.5ebeb40b.chunk.js.map": "/static/js/2.5ebeb40b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.98093c8c8d64889ee9efa6d21d4f014e.js": "/precache-manifest.98093c8c8d64889ee9efa6d21d4f014e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.7da82c5c.chunk.css.map": "/static/css/main.7da82c5c.chunk.css.map",
+    "static/js/2.5ebeb40b.chunk.js.LICENSE.txt": "/static/js/2.5ebeb40b.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/header-bg.7bee3d28.png",
+    "static/media/name.png": "/static/media/name.3d032edd.png",
+    "static/media/placeholder-img.png": "/static/media/placeholder-img.5419f1be.png",
+    "static/media/project-fishing-game-1.jpg": "/static/media/project-fishing-game-1.4c31962a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.23041e79.js",
+    "static/js/2.5ebeb40b.chunk.js",
+    "static/css/main.7da82c5c.chunk.css",
+    "static/js/main.dfc17df3.chunk.js"
+  ]
+}
