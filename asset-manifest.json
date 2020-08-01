@@ -1,26 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.7da82c5c.chunk.css",
-    "main.js": "/static/js/main.dfc17df3.chunk.js",
-    "main.js.map": "/static/js/main.dfc17df3.chunk.js.map",
+    "main.css": "/static/css/main.ca20d248.chunk.css",
+    "main.js": "/static/js/main.405dcf59.chunk.js",
+    "main.js.map": "/static/js/main.405dcf59.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.23041e79.js",
     "runtime-main.js.map": "/static/js/runtime-main.23041e79.js.map",
-    "static/js/2.5ebeb40b.chunk.js": "/static/js/2.5ebeb40b.chunk.js",
-    "static/js/2.5ebeb40b.chunk.js.map": "/static/js/2.5ebeb40b.chunk.js.map",
+    "static/js/2.d416f3de.chunk.js": "/static/js/2.d416f3de.chunk.js",
+    "static/js/2.d416f3de.chunk.js.map": "/static/js/2.d416f3de.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.98093c8c8d64889ee9efa6d21d4f014e.js": "/precache-manifest.98093c8c8d64889ee9efa6d21d4f014e.js",
+    "precache-manifest.36cb441156e5af110b3bacfdec2e9f04.js": "/precache-manifest.36cb441156e5af110b3bacfdec2e9f04.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.7da82c5c.chunk.css.map": "/static/css/main.7da82c5c.chunk.css.map",
-    "static/js/2.5ebeb40b.chunk.js.LICENSE.txt": "/static/js/2.5ebeb40b.chunk.js.LICENSE.txt",
+    "static/css/main.ca20d248.chunk.css.map": "/static/css/main.ca20d248.chunk.css.map",
+    "static/js/2.d416f3de.chunk.js.LICENSE.txt": "/static/js/2.d416f3de.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/header-bg.7bee3d28.png",
+    "static/media/image-1.jpg": "/static/media/image-1.fe15b56e.jpg",
+    "static/media/image-2.gif": "/static/media/image-2.d01beb4f.gif",
+    "static/media/image-2.jpg": "/static/media/image-2.f9018330.jpg",
+    "static/media/image-3.jpg": "/static/media/image-3.1c26edfa.jpg",
+    "static/media/image-3.gif": "/static/media/image-3.ead24017.gif",
+    "static/media/image-4.jpg": "/static/media/image-4.968fe33b.jpg",
+    "static/media/mountain-top.svg": "/static/media/mountain-top.5e345f61.svg",
     "static/media/name.png": "/static/media/name.3d032edd.png",
-    "static/media/placeholder-img.png": "/static/media/placeholder-img.5419f1be.png",
-    "static/media/project-fishing-game-1.jpg": "/static/media/project-fishing-game-1.4c31962a.jpg"
+    "static/media/video-1.mp4": "/static/media/video-1.fe0b616e.mp4",
+    "static/media/video-2.mp4": "/static/media/video-2.93130891.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.23041e79.js",
-    "static/js/2.5ebeb40b.chunk.js",
-    "static/css/main.7da82c5c.chunk.css",
-    "static/js/main.dfc17df3.chunk.js"
+    "static/js/2.d416f3de.chunk.js",
+    "static/css/main.ca20d248.chunk.css",
+    "static/js/main.405dcf59.chunk.js"
   ]
 }
