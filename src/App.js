@@ -10,12 +10,14 @@ import WorkTypeSelector from './components/WorkTypeSelector';
 import SocialLinks from './components/SocialLinks';
 import Info from './components/Info';
 
+import mountainTop from './img/mountain-top.svg';
+
 function App() {
 
   const [projectCategory, setProjectCategory] = useState('personal');
   const [activeProject, setActiveProject] = useState({
     client: projects.client[0],
-    personal: projects.personal[0]
+    personal: projects.personal[5]
   });
 
   const toggleWorkCategory = (category) => {
@@ -29,10 +31,13 @@ function App() {
       </header>
       <div className="wrapper">
         <div className="about">
+          <div className="about__top">
+            <img src={mountainTop} alt=""/>
+          </div>
           <div className="about__bio">
             <h2>About</h2>
             <p>I'm a designer of four years turned developer with a passion for UI, animation, and clean code. I'm currently working freelance but open to new opportunities.</p>
-            <a href="#" className="resume-button">My resume</a>
+            <a href="http://google.com" className="resume-button">My resume</a>
           </div>
           <div className="about__details">
             <Info />
