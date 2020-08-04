@@ -10,9 +10,10 @@ const Portrait = () => {
     // Definitions
     // -----------
 
-    var elem = document.getElementById('bodymovin');
-    var anim, animationAPI;
-    var windowSize = {
+    const elem = document.getElementById('bodymovin');
+    let anim;
+    let animationAPI;
+    const windowSize = {
       w: window.innerWidth,
       h: window.innerHeight,
     };
@@ -28,14 +29,14 @@ const Portrait = () => {
       // Blink
       // -----
 
-      var blinkSlider = animationAPI.getKeyPath(
+      const blinkSlider = animationAPI.getKeyPath(
         'Slider Control,Transform,X Position'
       );
-      var blinkDirection = 'down';
-      var blinkRange = 0;
+      let blinkDirection = 'down';
+      let blinkRange = 0;
 
-      var blink = function () {
-        var interval = setInterval(function blinkInterval() {
+      const blink = () => {
+        const interval = setInterval(function blinkInterval() {
           if (blinkDirection === 'down') blinkRange += 25;
           if (blinkDirection === 'up') blinkRange -= 25;
 
@@ -50,35 +51,30 @@ const Portrait = () => {
 
       setInterval(blink, 4500);
 
-      animationAPI.addValueCallback(blinkSlider, function (currentValue) {
-        return blinkRange;
-      });
+      animationAPI.addValueCallback(blinkSlider, () => blinkRange);
 
       // -------------
       // Face movement
       // -------------
 
-      var mousePosition = [0, 0];
-      var joystickSize = { w: null, h: null };
-      var joystickPosition = animationAPI.getKeyPath(
+      const mousePosition = [0, 0];
+      const joystickSize = { w: null, h: null };
+      const joystickPosition = animationAPI.getKeyPath(
         'JoyStkCtrl01,Transform,Position'
       );
-      var joystickBounds = animationAPI.getKeyPath(
+      const joystickBounds = animationAPI.getKeyPath(
         'JoyStkCtrl01 Origin,Contents,Group 1, Rectangle Path 1, Size'
       );
 
-      animationAPI.addValueCallback(joystickBounds, function (currentValue) {
-        joystickSize.w = currentValue[0];
-        joystickSize.h = currentValue[1];
+      animationAPI.addValueCallback(joystickBounds, (currentValue) => {
+        [joystickSize.w, joystickSize.h] = currentValue;
 
         return [joystickSize.w, joystickSize.h];
       });
 
-      animationAPI.addValueCallback(joystickPosition, function (currentValue) {
-        return mousePosition;
-      });
+      animationAPI.addValueCallback(joystickPosition, () => mousePosition);
 
-      window.addEventListener('mousemove', function (e) {
+      window.addEventListener('mousemove', (e) => {
         const mousePercent = {
           w: e.pageX / windowSize.w,
           h: e.pageY / windowSize.h,
@@ -93,7 +89,7 @@ const Portrait = () => {
     // Setup animation
     // ---------------
 
-    var animData = {
+    const animData = {
       container: elem,
       renderer: 'svg',
       loop: true,
@@ -111,7 +107,7 @@ const Portrait = () => {
   return (
     <div className="portrait">
       <div className="portrait__image">
-        <div id="bodymovin"></div>
+        <div id="bodymovin" />
       </div>
       <img src={name} className="portrait__name" alt="" />
     </div>

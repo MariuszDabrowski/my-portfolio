@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import ProjectSelectionItem from './ProjectSelectionItem';
 
@@ -22,15 +23,20 @@ const ProjectSelection = ({
           <ProjectSelectionItem
             key={`project-link-${project.id}`}
             project={project}
-            active={
-              activeProject[projectCategory].id === project.id ? true : false
-            }
+            active={activeProject[projectCategory].id === project.id}
             toggleActiveProject={toggleActiveProject}
           />
         );
       })}
     </div>
   );
+};
+
+ProjectSelection.propTypes = {
+  projects: PropTypes.arrayOf(PropTypes.object).isRequired,
+  projectCategory: PropTypes.string.isRequired,
+  activeProject: PropTypes.shape().isRequired,
+  setActiveProject: PropTypes.func.isRequired,
 };
 
 export default ProjectSelection;

@@ -3,12 +3,7 @@ module.exports = {
     browser: true,
     es2020: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-    'prettier',
-    'eslint-config-prettier',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb', 'eslint-config-prettier'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -17,5 +12,8 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react'],
-  rules: {},
+  rules: {
+    'react/no-danger': 0,
+    'jsx-a11y/media-has-caption': 0,
+  },
 };

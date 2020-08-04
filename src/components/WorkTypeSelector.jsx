@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const WorkTypeSelector = ({ projectCategory, toggleWorkCategory }) => {
   const toggleWorkType = (e) => {
@@ -39,6 +40,11 @@ const WorkTypeSelector = ({ projectCategory, toggleWorkCategory }) => {
       </button>
     </div>
   );
+};
+
+WorkTypeSelector.propTypes = {
+  projectCategory: PropTypes.string.isRequired,
+  toggleWorkCategory: PropTypes.func.isRequired,
 };
 
 export default WorkTypeSelector;
