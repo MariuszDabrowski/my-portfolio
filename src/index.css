@@ -346,6 +346,24 @@ header {
   margin: 40px 0;
 }
 
+.image-container {
+  width: 100%;
+  padding-bottom: 68.49315068%;
+  position: relative;
+}
+
+.image-container--large {
+  padding-bottom: 75%;
+}
+
+.image-container img,
+.image-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 /* ---------------- */
 /* Project overview */
 /* ---------------- */
@@ -378,11 +396,24 @@ header {
 
 .images-split {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .images-split__left,
 .images-split__right {
   width: calc(50% - 15px);
+  padding-bottom: 37.9%;
+  position: relative;
+}
+
+.images-split__left img,
+.images-split__left video,
+.images-split__right img,
+.images-split__right video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .images-split__left {
@@ -405,17 +436,12 @@ header {
   width: calc(100% - 2px);
   height: calc(100% - 2px);
   border: 1px solid rgba(0,0,0, 0.1);
+  pointer-events: none;
 }
 
 p + .project__video,
 p + .additional-hero {
   margin-top: 0;
-}
-
-.project__video,
-.additional-hero {
-  width: 100%;
-  margin-top: 30px;
 }
 
 .points {

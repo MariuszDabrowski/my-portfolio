@@ -17,7 +17,7 @@ function App() {
   const [projectCategory, setProjectCategory] = useState('personal');
   const [activeProject, setActiveProject] = useState({
     client: projects.client[0],
-    personal: projects.personal[5]
+    personal: projects.personal[0]
   });
 
   const toggleWorkCategory = (category) => {

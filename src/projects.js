@@ -161,6 +161,7 @@ const projects = {
       hero: aroundTheWorld1,
       splitImages: [{src: aroundTheWorld3, type: 'image'}, {src: aroundTheWorld4, type: 'image'}],
       video: aroundTheWorld2,
+      videoLarge: true,
       listHeading: 'Goals',
       listItems: [
         'Design and rig a biking character in After Effects',
@@ -175,6 +176,7 @@ const projects = {
       description: `<p>I’ve wanted to give recording a video tutorial on Youtube a shot. So I created this button to act as the lesson that I would teach in the video.</p>`,
       hero: hippo1,
       video: hippo2,
+      videoLarge: true,
       listHeading: 'Goals',
       listItems: [
         'Come up with a concept that’s eye catching but not overly complex',
@@ -190,6 +192,7 @@ const projects = {
       hero: hotSticky1,
       splitImages: [{src: hotSticky3, type: 'image'}, {src: hotSticky2, type: 'image'}],
       video: hotSticky4,
+      videoLarge: true,
       listHeading: 'Goals',
       listItems: [
         'Design a eye catching experiment',
