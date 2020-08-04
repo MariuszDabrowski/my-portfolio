@@ -13,11 +13,10 @@ import Info from './components/Info';
 import mountainTop from './img/mountain-top.svg';
 
 function App() {
-
   const [projectCategory, setProjectCategory] = useState('personal');
   const [activeProject, setActiveProject] = useState({
     client: projects.client[0],
-    personal: projects.personal[0]
+    personal: projects.personal[0],
   });
 
   const toggleWorkCategory = (category) => {
@@ -32,12 +31,18 @@ function App() {
       <div className="wrapper">
         <div className="about">
           <div className="about__top">
-            <img src={mountainTop} alt=""/>
+            <img src={mountainTop} alt="" />
           </div>
           <div className="about__bio">
             <h2>About</h2>
-            <p>I'm a designer of four years turned developer with a passion for UI, animation, and clean code. I'm currently working freelance but open to new opportunities.</p>
-            <a href="http://google.com" className="resume-button">My resume</a>
+            <p>
+              I&apos;m a designer of four years turned developer with a passion
+              for UI, animation, and clean code. I&apos;m currently working
+              freelance but open to new opportunities.
+            </p>
+            <a href="http://google.com" className="resume-button">
+              My resume
+            </a>
           </div>
           <div className="about__details">
             <Info />
@@ -47,7 +52,10 @@ function App() {
         <div className="work">
           <div className="work__heading">
             <h2>Work</h2>
-            <WorkTypeSelector projectCategory={projectCategory} toggleWorkCategory={toggleWorkCategory} />
+            <WorkTypeSelector
+              projectCategory={projectCategory}
+              toggleWorkCategory={toggleWorkCategory}
+            />
           </div>
           <div className="projects">
             <ProjectDetails activeProject={activeProject[projectCategory]} />

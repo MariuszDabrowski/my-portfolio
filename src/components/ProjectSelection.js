@@ -2,7 +2,12 @@ import React from 'react';
 
 import ProjectSelectionItem from './ProjectSelectionItem';
 
-const ProjectSelection = ({ projects, projectCategory, activeProject, setActiveProject }) => {
+const ProjectSelection = ({
+  projects,
+  projectCategory,
+  activeProject,
+  setActiveProject,
+}) => {
   const toggleActiveProject = (project) => {
     const updatedActiveProject = JSON.parse(JSON.stringify(activeProject));
     updatedActiveProject[projectCategory] = project;
@@ -17,7 +22,9 @@ const ProjectSelection = ({ projects, projectCategory, activeProject, setActiveP
           <ProjectSelectionItem
             key={`project-link-${project.id}`}
             project={project}
-            active={(activeProject[projectCategory].id === project.id) ? true : false}
+            active={
+              activeProject[projectCategory].id === project.id ? true : false
+            }
             toggleActiveProject={toggleActiveProject}
           />
         );

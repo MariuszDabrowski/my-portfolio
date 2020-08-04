@@ -13,6 +13,6 @@ const Info = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Info;
