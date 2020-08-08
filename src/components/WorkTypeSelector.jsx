@@ -1,44 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import styles from './WorkTypeSelector.module.css';
+
 const WorkTypeSelector = ({ projectCategory, toggleWorkCategory }) => {
-  const toggleWorkType = (e) => {
-    if (e.currentTarget.dataset.category === projectCategory) return;
-
-    const workButtons = document.querySelectorAll('.selector__item');
-
-    workButtons.forEach((button) => {
-      if (button.classList.contains('selector__item--active')) {
-        button.classList.remove('selector__item--active');
-      } else {
-        button.classList.add('selector__item--active');
-      }
-    });
-
-    toggleWorkCategory(e.currentTarget.dataset.category);
-  };
-
   return (
-    <div className="selector">
-      <button
-        type="button"
-        data-category="personal"
-        className="selector__item selector__item--active"
-        onClick={toggleWorkType}
-      >
-        <span className="selector__item__icon" />
-        <span className="selector__item__text">Personal</span>
-      </button>
-      <button
-        type="button"
-        data-category="client"
-        className="selector__item"
-        onClick={toggleWorkType}
-      >
-        <span className="selector__item__icon" />
-        <span className="selector__item__text">Client</span>
-      </button>
-    </div>
+    <button
+      type="button"
+      className={`${styles.toggle} ${styles[`toggle--${projectCategory}`]}`}
+      onClick={toggleWorkCategory}
+    >
+      <div className={styles.toggle__option}>Personal</div>
+      <div className={styles.toggle__option}>Client</div>
+      <div className={styles.toggle__active}>
+        <div className={styles['active-text']}>
+          <div className={styles['active-text__item']}>Personal</div>
+          <div className={styles['active-text__item']}>Client</div>
+        </div>
+      </div>
+    </button>
   );
 };
 

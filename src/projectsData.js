@@ -50,6 +50,7 @@ const projects = {
       description: `<p>I had the privilege of working with Honda Canada as a client for many years across many projects. I lead the front-end team and worked closely with the designers on the UI in multiple redesigns of the <a href="https://www.honda.ca/" target="_blank">Honda.ca</a> and <a href="https://www.acura.ca/">Acura.ca</a> properties as well as their other products (<a href="https://motorcycle.honda.ca/" target="_blank">Motorcycles</a>, <a href="https://powerequipment.honda.ca/" target="_blank">Power Equipment</a>, etc.).</p>`,
       hero: honda1,
       additionalHero: honda2,
+      hoverColor: '#df0033',
     },
     {
       id: 1,
@@ -63,6 +64,7 @@ const projects = {
         'Rebuild the site as a static site using React + Gatsby to improve the load times',
         'Implement an API to make updating deals and products easier',
       ],
+      hoverColor: '#6700a3',
     },
     {
       id: 2,
@@ -76,6 +78,7 @@ const projects = {
         'Build a bilingual panel based scrolling site',
         'Add subtle but pleasant animations throughout',
       ],
+      hoverColor: '#f69473 ',
     },
     {
       id: 3,
@@ -94,6 +97,7 @@ const projects = {
         'Create implement a custom Shopify theme',
         'Add subtle but pleasant animations throughout',
       ],
+      hoverColor: '#1dbabb',
     },
     {
       id: 4,
@@ -109,6 +113,7 @@ const projects = {
         'Build out the design in React',
         'Build a tool to help the designers layout new client pages',
       ],
+      hoverColor: '#e97022',
     },
   ],
   personal: [
@@ -128,6 +133,7 @@ const projects = {
         'Create an API to display all of the achievements, but do it in such a way that when future achievements land, little to no work is needed to update the page',
         'Replicate the Nintendo interface in the browser and make it responsive',
       ],
+      hoverColor: '#fa4474',
     },
     {
       id: 0,
@@ -146,6 +152,7 @@ const projects = {
         'Create a playable mini game',
         'Practice UI design that’s not a website',
       ],
+      hoverColor: '#2dbaff',
     },
     {
       id: 5,
@@ -161,6 +168,7 @@ const projects = {
         'Brush up on React',
         'Design a clean UI to make the data less daunting',
       ],
+      hoverColor: '#7600ab',
     },
     {
       id: 2,
@@ -180,6 +188,7 @@ const projects = {
         'Create a umbrella opening animation',
         'Find a way to layer these animations and make them interactive',
       ],
+      hoverColor: '#87b95e',
     },
     {
       id: 3,
@@ -195,10 +204,11 @@ const projects = {
         'Create a written tutorial',
         'Record a video tutorial',
       ],
+      hoverColor: '#6d6d6d',
     },
     {
       id: 1,
-      company: "Hot 'n' Sticky",
+      company: 'Hot and Sticky',
       projectTitle: 'Physics-based animation',
       description: `<p>I love combining various techniques and libraries when creating animations. I had just found out about Matter.js, a JavaScript physics library, and wanted to experiment with using it on in interactive animation.</p>`,
       hero: hotSticky1,
@@ -214,6 +224,7 @@ const projects = {
         'Use Matter.js to make the design interactive',
         'Write a process post explaining how this was done',
       ],
+      hoverColor: '#ff464c',
     },
   ],
 };

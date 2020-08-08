@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import lottie from 'lottie-web';
 import LottieAPI from 'lottie-api-updated';
 
-import name from '../img/name.png';
+import name from '../img/name.svg';
 
-const Portrait = () => {
+const Portrait = React.memo(() => {
   useEffect(() => {
     // -----------
     // Definitions
@@ -105,13 +105,15 @@ const Portrait = () => {
   }, []);
 
   return (
-    <div className="portrait">
-      <div className="portrait__image">
-        <div id="bodymovin" />
+    <header>
+      <div className="portrait static">
+        <div className="portrait__image">
+          <div id="bodymovin" />
+        </div>
+        <img src={name} className="portrait__name" alt="" />
       </div>
-      <img src={name} className="portrait__name" alt="" />
-    </div>
+    </header>
   );
-};
+});
 
 export default Portrait;

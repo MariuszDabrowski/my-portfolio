@@ -1,0 +1,109 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.projects__item {
+  width: calc(50% - 15px);
+  padding-bottom: 33.392857%;
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.projects__item:nth-child(-n + 2) {
+  margin-top: 0;
+}
+
+.projects__item:nth-child(2n + 1) {
+  margin-left: 0;
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 26px;
+  background: #ffb8b2;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 20;
+}
+
+.projects__item:hover .hover {
+  opacity: 1;
+}
+
+.hover::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url('../img/foil.gif') center no-repeat;
+  background-size: 120% 120%;
+  mix-blend-mode: multiply;
+  opacity: 0.3;
+}
+
+.hover__title {
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 34px;
+  position: relative;
+  z-index: 10;
+}
+
+.hover__sub-title {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 18px;
+  position: relative;
+  z-index: 10;
+}
+
+.tags {
+  margin-top: auto;
+  display: flex;
+  position: relative;
+  z-index: 10;
+}
+
+.tags__item {
+  background: #fff;
+  margin-left: 6px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.tags__item:first-child {
+  margin-left: 0;
+}
