@@ -1,0 +1,32 @@
+/* -------- */
+/* Portrait */
+/* -------- */
+
+.portrait {
+  text-align: center;
+  position: relative;
+  top: -3rem;
+}
+
+.bodymovin {
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto;
+  filter: grayscale(20%);
+}
+
+.portrait__image {
+  width: 21.8rem;
+  height: 21.8rem;
+  background: #323232;
+  border-radius: 100%;
+}
+
+.portrait__name {
+  width: 22rem;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -45px);
+  z-index: 10;
+}

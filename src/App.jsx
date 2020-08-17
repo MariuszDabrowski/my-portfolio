@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
+import { SwitchTransition, CSSTransition } from 'react-transition-group';
 import './App.css';
 
-import projects from './projectsData';
-
-import Portrait from './components/Portrait';
-import About from './components/About';
-import ProjectDetails from './components/ProjectDetails';
-import ProjectSelection from './components/ProjectSelection';
-import WorkTypeSelector from './components/WorkTypeSelector';
-import Teaching from './components/Teaching';
-import ProductListing from './components/ProjectListing';
+import Portrait from './components/about/Portrait';
+import About from './components/about/About';
+import ProjectDetails from './components/project-details/ProjectDetails';
+import WorkTypeSelector from './components/project-listing/WorkTypeSelector';
+import Teaching from './components/teaching/Teaching';
+import ProjectListing from './components/project-listing/ProjectListing';
 
 function App() {
   const [projectCategory, setProjectCategory] = useState('personal');
-  const [activeProject, setActiveProject] = useState({
-    client: null,
-    personal: null,
-  });
+  const [activeProject, setActiveProject] = useState(null);
+  const [workTitle, setWorkTitle] = useState('Work');
+
+  const projectListingElement = React.createRef();
+  const projectTitle = React.createRef();
 
   const toggleWorkCategory = () => {
     if (projectCategory === 'client') {
@@ -28,6 +27,7 @@ function App() {
 
   return (
     <>
+      <div className="curtain" />
       <Portrait />
 
       <div className="wrapper">
@@ -35,29 +35,51 @@ function App() {
         <Teaching />
 
         <section className="work">
+          
+          {/* ------------ */}
+          {/* Work Heading */}
+          {/* ------------ */}
+
           <div className="work__heading">
-            <h2>Work</h2>
+            
+            <h2 ref={projectTitle}>{workTitle}</h2>
+          
             <WorkTypeSelector
+              activeProject={activeProject}
+              setActiveProject={setActiveProject}
               projectCategory={projectCategory}
               toggleWorkCategory={toggleWorkCategory}
+              setWorkTitle={setWorkTitle}
             />
+
           </div>
+
+          {/* ------------------------ */}
+          {/* Project Listing & Detail */}
+          {/* ------------------------ */}
+          
           <div className="projects">
-            <ProductListing projectCategory={projectCategory} />
-            {/* {activeProject.client ||
-              (activeProject.personal && (
-                <>
-                  <ProjectDetails
-                    activeProject={activeProject[projectCategory]}
-                  />
-                  <ProjectSelection
+            {!activeProject && (
+              <SwitchTransition mode="out-in">
+                <CSSTransition
+                  key={projectCategory}
+                  classNames="slide"
+                  timeout={{
+                    enter: 200,
+                    exit: 800
+                  }}
+                  nodeRef={projectListingElement}
+                >
+                  <ProjectListing
                     projectCategory={projectCategory}
-                    projects={projects[projectCategory]}
-                    activeProject={activeProject}
                     setActiveProject={setActiveProject}
+                    setWorkTitle={setWorkTitle}
+                    ref={projectListingElement}
                   />
-                </>
-              ))} */}
+                </CSSTransition>
+              </SwitchTransition>
+            )}
+            {activeProject && <ProjectDetails activeProject={activeProject} />}
           </div>
         </section>
       </div>

@@ -1,0 +1,114 @@
+.toggle {
+  position: relative;
+  background: #3e3e3e;
+  overflow: hidden;
+  display: flex;
+  border-radius: 2.2rem;
+  border: 0;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .toggle {
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+
+.toggle__option {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.6rem;
+  width: 12rem;
+  height: 4.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle__option:first-of-type {
+  margin-right: -1rem;
+}
+
+.toggle__active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#f5d677, #cab062);
+  width: 12rem;
+  height: 100%;
+  border-radius: 4.4rem;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.toggle--client .toggle__active {
+  transform: translateX(91%);
+}
+
+.toggle--personal .toggle__active {
+  transform: translateX(0);
+}
+
+.active-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #454545;
+  font-size: 1.6rem;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: translateY(0);
+}
+
+.toggle--client .active-text {
+  transform: translateY(-100%);
+}
+
+.active-text__item {
+  width: 12rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close {
+  width: 4.4rem;
+  height: 4.4rem;
+  background: linear-gradient(#f5d677, #cab062);
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  order: -1;
+}
+
+@media (min-width: 768px) {
+  .close {
+    margin-left: auto;
+    order: 0;
+  }
+}
+
+.close svg {
+  fill: #454545;
+  width: 40%;
+  height: 40%;
+  transform: translate(1px, 0);
+  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.close:hover svg {
+  transform: translate(0.1rem, 0) rotate(90deg);
+}

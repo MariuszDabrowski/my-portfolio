@@ -1,0 +1,153 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.projects__item {
+  width: 100%;
+  margin-top: 3rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border: 0;
+  padding: 0 0 68% 0;
+  text-align: left;
+  background: transparent;
+  outline: none;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .projects__item:first-child {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .projects__item {
+    width: calc(50% - 1.5rem);
+    padding: 0 0 33% 0;
+    margin-left: 3rem;
+  }
+
+  .projects__item:nth-child(-n + 2) {
+    margin-top: 0;
+  }
+  
+  .projects__item:nth-child(2n + 1) {
+    margin-left: 0;
+  }
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.hero img {
+  height: 100%;
+}
+
+.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  padding: 2.4rem 2.6rem;
+  background: #ffb8b2;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 20;
+}
+
+@media (min-width: 768px) {
+  .hover {
+    display: flex;
+  }
+}
+
+.projects__item:hover .hover {
+  opacity: 1;
+}
+
+.hover::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url('../../img/foil.gif') center no-repeat;
+  background-size: 120% 120%;
+  mix-blend-mode: multiply;
+  opacity: 0.3;
+}
+
+.hover__title {
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 3.4rem;
+  position: relative;
+  z-index: 10;
+}
+
+.hover__sub-title {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.8rem;
+  position: relative;
+  z-index: 10;
+}
+
+.tags {
+  margin-top: auto;
+  display: flex;
+  position: relative;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+.tags__item {
+  background: #fff;
+  margin-right: 0.6rem;
+  margin-top: 0.6rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .hover__title {
+    font-size: 2.4rem;
+  }
+
+  .hover__sub-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hover__title {
+    font-size: 3.4rem;
+  }
+
+  .hover__sub-title {
+    font-size: 1.8rem;
+  }
+}
