@@ -71,16 +71,7 @@ const ProjectDetails = ({ activeProject }) => {
           </a>
         )}
 
-        <div className={styles.description} dangerouslySetInnerHTML={{ __html: activeProject.description }} />
-
-        <div className={styles.goals}>
-          <h3>Achievements</h3>
-          <ul className={styles.list}>
-            {activeProject.achievements.map((achievement) => <li key={`achievement-${achievement}`} className={styles.list__item}><p>{achievement}</p></li>)}
-          </ul>
-        </div>
-
-        <div className={styles['tech-role']}>
+<div className={styles['tech-role']}>
           <div className={styles['tech-role__item']}>
             <h3>Technologies</h3>
             <div className={styles['tech-role__list']}>
@@ -91,6 +82,15 @@ const ProjectDetails = ({ activeProject }) => {
             <h3>Role</h3>
             <p className={styles['tech-role__description']}>{activeProject.role}</p>
           </div>
+        </div>
+
+        <div className={styles.description} dangerouslySetInnerHTML={{ __html: activeProject.description }} />
+
+        <div className={styles.goals}>
+          <h3>Achievements</h3>
+          <ul className={styles.list}>
+            {activeProject.achievements.map((achievement) => <li key={`achievement-${achievement}`} className={styles.list__item}><p>{achievement}</p></li>)}
+          </ul>
         </div>
 
       </div>

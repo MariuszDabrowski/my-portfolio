@@ -95,7 +95,10 @@ const projects = {
         src_2x: natureCleanThumbRetina
       },
       tags: ['Shopify', 'Ecommerce', 'Redesign'],
-      description: `<p>Following a rebrand the client wanted a website to match their new look. This included the need for a e-commerce platform to sell their products.</p>`,
+      description: `
+        <p>I was tasked with helping the client choose a platform that would make showcasing, selling, and updating their products without the need of a developer a breeze.</p>
+        <p>We ended up going with Shopify. I built a custom theme, with some fun micro animations throughout. I also ended up building some UI tools to help update parts of the site that were not easily updatable through the backend without the knowledge of code.</p>
+      `,
       media: [{
         id: 0,
         type: 'image',
@@ -115,9 +118,10 @@ const projects = {
       processLink: '',
       githubLink: '',
       achievements: [
-        '1',
-        '2',
-        '3',
+        'Helped the client settle on a platform (Shopify) that suited all their requirements',
+        'Created a custom Shopify theme',
+        'Customized the theme to make updating all of the sites data in the backend a breeze for the client',
+        'Built custom UI tools to update non shopify elements',
       ],
     },{
       id: 2,
@@ -129,7 +133,10 @@ const projects = {
         src_2x: russellStoverThumbRetina
       },
       tags: ['Redesign', 'Vanilla JS'],
-      description: `<p>The client wanted a more hip and eye catching design with a pleasant user experience.</p>`,
+      description: `
+        <p>The client was looking to create a online presence in Canada to showcase their brand.</p>
+        <p>Working closely with the designer we came up with a panel scrolling concept. Being a simple site we decided we'd go at this one without a framework to keep things light.</p>
+      `,
       media: [{
         id: 0,
         type: 'image',
@@ -154,9 +161,8 @@ const projects = {
       processLink: '',
       githubLink: '',
       achievements: [
-        '1',
-        '2',
-        '3',
+        'Built a custom panel scroll snapping site',
+        'Worked closely with the designer on the UX approach for the site',
       ],
     },{
       id: 0,
@@ -188,9 +194,10 @@ const projects = {
       processLink: '',
       githubLink: '',
       achievements: [
-        '1',
-        '2',
-        '3',
+        'Shipped over 6 projects in a 5 year period',
+        'Led the front-end team on a few of the projects',
+        'Worked closely with the client on new feature ideas and approaches',
+        'Worked closely with designers on the UI and UX'
       ],
     },
     {
@@ -203,7 +210,10 @@ const projects = {
         src_2x: kfcThumbRetina
       },
       tags: ['Shopify', 'Ecommerce'],
-      description: `<p>Description</p>`,
+      description: `
+        <p>The client came to us with an idea to build a ecommerce store with a VERY tight deadline.</p>
+        <p>To keep things simple and focus on the products we stuck with a grid layout with subtle animations to bring some life to the theme.</p>
+      `,
       media: [{
         id: 0,
         type: 'image',
@@ -223,9 +233,7 @@ const projects = {
       processLink: '',
       githubLink: '',
       achievements: [
-        '1',
-        '2',
-        '3',
+        'Built a custom Shopify theme with a very tight deadline',
       ],
     },{
       id: 1,
@@ -237,7 +245,10 @@ const projects = {
         src_2x: tacobellThumbRetina
       },
       tags: ['React', 'Gatsby', 'CMS Improvements'],
-      description: `<p>Convert the project from .NET to a more modern framework that would make the site load faster and easier to update.</p>`,
+      description: `
+        <p>The client wanted to fix two problems, the site load times, and the time it takes to update the content.</p>
+        <p>Since the site didn't require any real time data we decide to go with a static site approach, this meant moving the site from .NET over to React/Gatsby. To make the content easier to update we implemented a API that the site utilizes that doesn't require you to touch code to update content.</p>
+      `,
       media: [{
         id: 0,
         type: 'image',
@@ -257,9 +268,8 @@ const projects = {
       processLink: '',
       githubLink: '',
       achievements: [
-        '1',
-        '2',
-        '3',
+        'Rebuilt .NET site to utilize Gatsby and React',
+        'Took the update times for new content down from 2 hours to 15 minutes',
       ],
     },
     {
@@ -272,7 +282,10 @@ const projects = {
         src_2x: gripLimitedThumbRetina
       },
       tags: ['Redesign', 'React', 'CMS Tooling'],
-      description: `<p>Still stuck in the Flash days, Grip wanted to redo their website with a focus on showcasing the client work.</p>`,
+      description: `
+        <p>Still stuck in the Flash days, Grip Limited wanted to redo their website with a focus on showcasing the client work while showing through some of their company personality.</p>
+        <p>The site was built in React with a Django backend to make the dynamic content easier to update. I also built UI tools to allow designers to layout the dynamic pages without needing to touch any code.</p>
+      `,
       media: [{
         id: 0,
         type: 'image',
@@ -292,9 +305,8 @@ const projects = {
       processLink: '',
       githubLink: '',
       achievements: [
-        '1',
-        '2',
-        '3',
+        'Rebuilt agency site using React',
+        'Built custom UI tools to allow non-techical folks to layout client pages',
       ],
     }
   ],
@@ -309,7 +321,10 @@ const projects = {
         src_2x: acmilesThumbRetina,
       },
       tags: ['React', 'API Design', 'UI'],
-      description: `<p>This project is based off of the achievements panel from the wildly popular Nintendo Animal Crossing game.</p>`,
+      description: `
+      <p>I was looking for a new project to fill up my free time, and the internet was going crazy for the new Animal Crossing: New Horizon's game that just came out for the Nintendo Switch.</p>
+      <p>The game is full of beautiful UI's, some with information that many players would love access to outside of the game. So I thought, why not take the achievements UI and re-create it as a website, where users could come to see what all of the in game achievements are.</p>
+      `,
       media: [{
         id: 0,
         type: 'image',
@@ -334,9 +349,9 @@ const projects = {
       processLink: 'https://codepen.io/MarioD/post/animal-crossing-the-web',
       githubLink: 'https://github.com/MariuszDabrowski/ac-miles',
       achievements: [
-        '1',
-        '2',
-        '3',
+        'Recreated a one to one responsive version of Video Game UI in the browser',
+        'Gathered, organized, and replicated all data to do with achievements from the game',
+        'Created an API to easily update achievements without touching site code',
       ],
     },
     {
@@ -349,7 +364,7 @@ const projects = {
         src_2x: fishingGameThumbRetina
       },
       tags: ['Design', 'Interactive SVG', 'Minigame', 'Vanilla JS'],
-      description: `<p>I wanted to cut down on video game time, so what better way than to build your own mini game.</p>`,
+      description: `<p>Having spent way too much time playing Stardew Valley (video game) I was looking for a way where it felt like I was still playing the game but doing something productive. So I thought why not design and code a mini game besed on some of the elements from the game.</p>`,
       media: [{
         id: 0,
         type: 'image',
@@ -374,9 +389,9 @@ const projects = {
       processLink: '',
       githubLink: '',
       achievements: [
-        '1',
-        '2',
-        '3',
+        'Implemented a mixture of SVG and canvas animations that interact with one another',
+        'Added interactivity to the animations based on the users input',
+        'Designed a clean UI with a playable minigame',
       ],
     },
     {
@@ -389,7 +404,7 @@ const projects = {
         src_2x: covidThumbRetina
       },
       tags: ['Chrome Extension', 'React', 'Data Visualization'],
-      description: `<p>This project was born out of a 24 hour hackathon. At the time there wasn’t a good source to get an idea how every country was doing during the pandemic.</p>`,
+      description: `<p>This project was born out of a 24 hour hackathon. At the time there wasn’t a good source to get an idea how every country was doing during the pandemic. This was a perfect opportunity to try out some new technologies, design and build something new.</p>`,
       media: [{
         id: 0,
         type: 'image',
@@ -414,9 +429,9 @@ const projects = {
       processLink: '',
       githubLink: 'https://github.com/notisnan/covid19-tracker',
       achievements: [
-        '1',
-        '2',
-        '3',
+        'Completed MVP in 24 hours',
+        'Designed a clean, and interactive way to show the data that our research showed people were most interested in',
+        'Deployed the final product in a Chrome Extension',
       ],
     },
     {
@@ -429,7 +444,7 @@ const projects = {
         src_2x: aroundTheWorldThumbRetina
       },
       tags: ['Lottie', 'Vanilla JS', 'Character Rigging'],
-      description: `<p>This project was created to experiment with animations created in After Effects using Lottie and finding ways to make them interactive.</p>`,
+      description: `<p>I just discovered Lottie (animation library) and wanted to create a project to test out its capabilities. This also gave me an excuse to learn a bit of After Effects and do some design work in Illustrator.</p>`,
       media: [{
         id: 0,
         type: 'image',
@@ -459,9 +474,9 @@ const projects = {
       processLink: 'https://codepen.io/MarioD/post/bike-to-shool-the-process',
       githubLink: '',
       achievements: [
-        '1',
-        '2',
-        '3',
+        'Learned to rig characters in After Effects',
+        'Came up with a way to combine After Effect animations together to create advanced interactive elements in the browser',
+        'Created a ineractive animation with collision detection',
       ],
     },
     {
@@ -474,7 +489,7 @@ const projects = {
         src_2x: hippoThumbRetina
       },
       tags: ['GSAP', 'SVG', 'Design'],
-      description: `<p>I’ve wanted to give recording a video tutorial on Youtube a shot. So I created this button to act as the lesson that I would teach in the video.</p>`,
+      description: `<p>I had the itch to teach and wanted to create a small project that I could record a video tutorial with. The hippo was simple enough that the video wouldn't be 4 hours long but had some complexity in there to allow me to practice my technical communication.</p>`,
       media: [{
         id: 0,
         type: 'image',
@@ -499,9 +514,8 @@ const projects = {
       processLink: 'https://codepen.io/MarioD/post/interactive-hippo-button-tutorial',
       githubLink: 'https://github.com/MariuszDabrowski/hippo-button',
       achievements: [
-        '1',
-        '2',
-        '3',
+        'Utilized GSAP to create a fun interactive timeline animation',
+        'Recorded a video tutorial and wrote a blog post to teach the process on creating an animation like this from start to end',
       ],
     },
     {
@@ -514,7 +528,7 @@ const projects = {
         src_2x: hotStickyThumbRetina
       },
       tags: ['MatterJS', 'Design', 'Interactive Animation'],
-      description: `<p>I love combining various techniques and libraries when creating animations. I had just found out about Matter.js, a JavaScript physics library, and wanted to experiment with using it on in interactive animation.</p>`,
+      description: `<p>I had just discovered Matter.js (physics based animation library) and wanted to create a project to test out its capabilities. I'm always looking for an excuse to combine my love for design and code, this was the perfect project for that.</p>`,
       media: [{
         id: 0,
         type: 'image',
@@ -539,9 +553,8 @@ const projects = {
       processLink: 'https://codepen.io/MarioD/post/hot-and-sticky-the-process',
       githubLink: '',
       achievements: [
-        '1',
-        '2',
-        '3',
+        'Learned and used Matter.js to create a fun and interactive animation',
+        'Designed a cute character duo',
       ],
     },
   ],

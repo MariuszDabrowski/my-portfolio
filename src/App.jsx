@@ -9,6 +9,8 @@ import WorkTypeSelector from './components/project-listing/WorkTypeSelector';
 import Teaching from './components/teaching/Teaching';
 import ProjectListing from './components/project-listing/ProjectListing';
 
+import projects from './data/projects';
+
 function App() {
   const [projectCategory, setProjectCategory] = useState('personal');
   const [activeProject, setActiveProject] = useState(null);
