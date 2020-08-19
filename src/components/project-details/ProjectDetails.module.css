@@ -147,13 +147,7 @@ h3 {
 }
 
 .tech-role {
-  margin-top: 3rem;
-}
-
-@media (min-width: 1024px) {
-  .tech-role {
-    margin-top: 5rem;
-  }
+  margin-top: 5rem;
 }
 
 .tech-role__item {

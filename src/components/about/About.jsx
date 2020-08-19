@@ -12,7 +12,7 @@ const About = React.memo(() => {
         <h2>About</h2>
         <p>
           I’m a Toronto-based developer who started out my career as a designer.
-          I have a passion for design, UX, and animation. In my spare time I
+          I have a passion for UX, animation, and clean code. In my spare time I
           love to experiment with web animations, take wildlife macro photos,
           and share my knowledge of code with others.
         </p>

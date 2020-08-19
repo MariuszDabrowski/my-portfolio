@@ -11,7 +11,7 @@ const Info = () => {
       </div>
       <div className={styles.info__item}>
         <div className={styles.info__item__title}>Location</div>
-        <div className={styles.info__item__description}>Toronto, Ontario</div>
+        <div className={styles.info__item__description}>Toronto, Canada</div>
       </div>
       <div className={styles.info__item}>
         <div className={styles.info__item__title}>Current Position</div>

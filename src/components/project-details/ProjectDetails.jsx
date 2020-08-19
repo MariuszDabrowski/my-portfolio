@@ -67,7 +67,7 @@ const ProjectDetails = ({ activeProject }) => {
             rel="noopener noreferrer"
             className="button-1"
           >
-            Github
+            GitHub
           </a>
         )}
 
