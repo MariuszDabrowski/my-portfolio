@@ -23,7 +23,7 @@ const About = React.memo(() => {
           Contact Me
         </a>
         <a
-          href="/mariusz-dabrowski-resume.pdf"
+          href="/resume-mariusz-dabrowski.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="button-1"
