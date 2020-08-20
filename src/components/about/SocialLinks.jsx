@@ -6,20 +6,20 @@ const SocialLinks = () => {
   return (
     <div className={styles.social}>
       <a
-        href="https://twitter.com/mariod"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={styles.social__item}
-      >
-        Twitter
-      </a>
-      <a
         href="https://codepen.io/MarioD"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.social__item}
       >
         CodePen
+      </a>
+      <a
+        href="https://twitter.com/mariod"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.social__item}
+      >
+        Twitter
       </a>
       <a
         href="https://github.com/MariuszDabrowski"
@@ -38,20 +38,20 @@ const SocialLinks = () => {
         YouTube
       </a>
       <a
-        href="https://500px.com/intomacro"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={styles.social__item}
-      >
-        500px
-      </a>
-      <a
         href="https://www.linkedin.com/in/mariuszpdabrowski/"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.social__item}
       >
         LinkedIn
+      </a>
+      <a
+        href="https://500px.com/intomacro"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.social__item}
+      >
+        500px
       </a>
     </div>
   );

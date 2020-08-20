@@ -88,13 +88,13 @@ const projects = {
     {
       id: 3,
       company: 'Nature Clean',
-      projectTitle: 'Redesign + Ecommerce',
+      projectTitle: 'Redesign + E-Commerce',
       hoverColor: '#1dbabb',
       hero: {
         src: natureCleanThumb,
         src_2x: natureCleanThumbRetina
       },
-      tags: ['Shopify', 'Ecommerce', 'Redesign'],
+      tags: ['Shopify', 'E-Commerce', 'Redesign'],
       description: `
         <p>I was tasked with helping the client choose a platform that would make showcasing, selling, and updating their products without the need of a developer a breeze.</p>
         <p>We ended up going with Shopify. I built a custom theme, with some fun micro animations throughout. I also ended up building some UI tools to help update parts of the site that were not easily updatable through the backend without the knowledge of code.</p>
@@ -203,15 +203,15 @@ const projects = {
     {
       id: 4,
       company: 'KFC',
-      projectTitle: 'Ecommerce',
+      projectTitle: 'E-Commerce',
       hoverColor: '#870c21',
       hero: {
         src: kfcThumb,
         src_2x: kfcThumbRetina
       },
-      tags: ['Shopify', 'Ecommerce'],
+      tags: ['Shopify', 'E-Commerce'],
       description: `
-        <p>The client came to us with an idea to build a ecommerce store with a VERY tight deadline.</p>
+        <p>The client came to us with an idea to build a e-commerce store with a VERY tight deadline.</p>
         <p>To keep things simple and focus on the products we stuck with a grid layout with subtle animations to bring some life to the theme.</p>
       `,
       media: [{
@@ -322,8 +322,7 @@ const projects = {
       },
       tags: ['React', 'API Design', 'UI'],
       description: `
-      <p>I was looking for a new project to fill up my free time, and the internet was going crazy for the new Animal Crossing: New Horizon's game that just came out for the Nintendo Switch.</p>
-      <p>The game is full of beautiful UI's, some with information that many players would love access to outside of the game. So I thought, why not take the achievements UI and re-create it as a website, where users could come to see what all of the in game achievements are.</p>
+        <p>I was looking for a new project to work on and the game <i>Animal Crossing: New Horizons</i> had just recently been released for the Nintendo Switch. At the time, there was no good visual representation of all the possible achievements in the game. I thought the game was full of beautiful UI, so I decided to recreate the achievements UI as a way for other players to visualize and learn about these achievements.</p>
       `,
       media: [{
         id: 0,
@@ -349,22 +348,22 @@ const projects = {
       processLink: 'https://codepen.io/MarioD/post/animal-crossing-the-web',
       githubLink: 'https://github.com/MariuszDabrowski/ac-miles',
       achievements: [
-        'Recreated a one to one responsive version of Video Game UI in the browser',
-        'Gathered, organized, and replicated all data to do with achievements from the game',
-        'Created an API to easily update achievements without touching site code',
+        'Recreated a one-to-one responsive version of the game’s UI in the browser',
+        'Gathered, organized, and replicated all the game’s data related to achievements',
+        'Created an API to allow easy updates of future game achievements',
       ],
     },
     {
       id: 0,
       company: 'Fishing Mini Game',
-      projectTitle: 'Interactive animation',
+      projectTitle: 'Interactive Animation',
       hoverColor: '#2dbaff',
       hero: {
         src: fishingGameThumb,
         src_2x: fishingGameThumbRetina
       },
-      tags: ['Design', 'Interactive SVG', 'Minigame', 'Vanilla JS'],
-      description: `<p>Having spent way too much time playing Stardew Valley (video game) I was looking for a way where it felt like I was still playing the game but doing something productive. So I thought why not design and code a mini game besed on some of the elements from the game.</p>`,
+      tags: ['Design', 'Interactive SVG', 'Mini Game', 'Vanilla JS'],
+      description: `<p>This project was inspired by the indie game Stardew Valley. The fishing mechanics was one of my favourite aspects of the game and I wanted to challenge myself to create a similar browser-based mini game.</p>`,
       media: [{
         id: 0,
         type: 'image',
@@ -389,22 +388,22 @@ const projects = {
       processLink: '',
       githubLink: '',
       achievements: [
-        'Implemented a mixture of SVG and canvas animations that interact with one another',
-        'Added interactivity to the animations based on the users input',
-        'Designed a clean UI with a playable minigame',
+        'Created a mixture of SVG and canvas animations that interact with one another',
+        'Added interactivity to animations based on user input',
+        'Designed a clean UI for a playable mini game',
       ],
     },
     {
       id: 5,
       company: 'COVID-19 Tracker',
-      projectTitle: 'Chrome extension',
+      projectTitle: 'Chrome Extension',
       hoverColor: '#7600ab',
       hero: {
         src: covidThumb,
         src_2x: covidThumbRetina
       },
       tags: ['Chrome Extension', 'React', 'Data Visualization'],
-      description: `<p>This project was born out of a 24 hour hackathon. At the time there wasn’t a good source to get an idea how every country was doing during the pandemic. This was a perfect opportunity to try out some new technologies, design and build something new.</p>`,
+      description: `<p>This project was born out of a 24-hour hackathon. At the time, there was a lack of easily accessible global statistics for the COVID-19 pandemic. This was a perfect opportunity to help people visualize the global impact of COVID-19 and allowed me to experiment with new technologies.</p>`,
       media: [{
         id: 0,
         type: 'image',
@@ -429,22 +428,22 @@ const projects = {
       processLink: '',
       githubLink: 'https://github.com/notisnan/covid19-tracker',
       achievements: [
-        'Completed MVP in 24 hours',
-        'Designed a clean, and interactive way to show the data that our research showed people were most interested in',
-        'Deployed the final product in a Chrome Extension',
+        'Completed a MVP in 24 hours',
+        'Ability for the user to select countries of interest and sort by statistic',
+        'Deployed the final product in React as a Chrome extension',
       ],
     },
     {
       id: 2,
-      company: 'Around The World',
-      projectTitle: 'Interactive Aniation',
+      company: 'Around the World',
+      projectTitle: 'Interactive Animation',
       hoverColor: '#87b95e',
       hero: {
         src: aroundTheWorldThumb,
         src_2x: aroundTheWorldThumbRetina
       },
       tags: ['Lottie', 'Vanilla JS', 'Character Rigging'],
-      description: `<p>I just discovered Lottie (animation library) and wanted to create a project to test out its capabilities. This also gave me an excuse to learn a bit of After Effects and do some design work in Illustrator.</p>`,
+      description: `<p>I had just discovered the animation library Lottie and wanted to experiment with its capabilities. This project also inspired me to learn more about After Effects and create some design work in Illustrator.</p>`,
       media: [{
         id: 0,
         type: 'image',
@@ -474,9 +473,9 @@ const projects = {
       processLink: 'https://codepen.io/MarioD/post/bike-to-shool-the-process',
       githubLink: '',
       achievements: [
-        'Learned to rig characters in After Effects',
-        'Came up with a way to combine After Effect animations together to create advanced interactive elements in the browser',
-        'Created a ineractive animation with collision detection',
+        'Learned how to rig characters in After Effects',
+        'Combined After Effect animations together to create advanced interactive elements in the browser',
+        'Created an interactive animation with collision detection',
       ],
     },
     {
@@ -489,7 +488,7 @@ const projects = {
         src_2x: hippoThumbRetina
       },
       tags: ['GSAP', 'SVG', 'Design'],
-      description: `<p>I had the itch to teach and wanted to create a small project that I could record a video tutorial with. The hippo was simple enough that the video wouldn't be 4 hours long but had some complexity in there to allow me to practice my technical communication.</p>`,
+      description: `<p>I had some colleagues inquire about my animation creation process, so I created this project to share my knowledge. The hippo button incorporates multiple techniques that offers a good primer on SVG timeline animations. This project also allowed me to practice my technical communication.</p>`,
       media: [{
         id: 0,
         type: 'image',
@@ -514,21 +513,21 @@ const projects = {
       processLink: 'https://codepen.io/MarioD/post/interactive-hippo-button-tutorial',
       githubLink: 'https://github.com/MariuszDabrowski/hippo-button',
       achievements: [
-        'Utilized GSAP to create a fun interactive timeline animation',
-        'Recorded a video tutorial and wrote a blog post to teach the process on creating an animation like this from start to end',
+        'Utilized GSAP to create a fun and interactive timeline animation',
+        'Created a written and video tutorial to share my creation process from start to finish',
       ],
     },
     {
       id: 1,
       company: 'Hot and Sticky',
-      projectTitle: 'Physics-based animation',
+      projectTitle: 'Physics-Based Animation',
       hoverColor: '#ff464c',
       hero: {
         src: hotStickyThumb,
         src_2x: hotStickyThumbRetina
       },
       tags: ['MatterJS', 'Design', 'Interactive Animation'],
-      description: `<p>I had just discovered Matter.js (physics based animation library) and wanted to create a project to test out its capabilities. I'm always looking for an excuse to combine my love for design and code, this was the perfect project for that.</p>`,
+      description: `<p>I had just discovered the 2D physics engine Matter.js and wanted to experiment with its capabilities. This project also gave me the opportunity to combine my love for both design and code.</p>`,
       media: [{
         id: 0,
         type: 'image',
@@ -553,8 +552,8 @@ const projects = {
       processLink: 'https://codepen.io/MarioD/post/hot-and-sticky-the-process',
       githubLink: '',
       achievements: [
-        'Learned and used Matter.js to create a fun and interactive animation',
-        'Designed a cute character duo',
+        'Learned and implemented Matter.js to create a fun and interactive animation',
+        'Wrote an article detailing some of the techniques used in the creation process',
       ],
     },
   ],
