@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.878bb298.chunk.css",
-    "main.js": "/static/js/main.bea3096f.chunk.js",
-    "main.js.map": "/static/js/main.bea3096f.chunk.js.map",
+    "main.js": "/static/js/main.b41ad90b.chunk.js",
+    "main.js.map": "/static/js/main.b41ad90b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.23041e79.js",
     "runtime-main.js.map": "/static/js/runtime-main.23041e79.js.map",
-    "static/js/2.7fb7836f.chunk.js": "/static/js/2.7fb7836f.chunk.js",
-    "static/js/2.7fb7836f.chunk.js.map": "/static/js/2.7fb7836f.chunk.js.map",
+    "static/js/2.117741a1.chunk.js": "/static/js/2.117741a1.chunk.js",
+    "static/js/2.117741a1.chunk.js.map": "/static/js/2.117741a1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7c21fda47dc9a357664ede1100ca8f5f.js": "/precache-manifest.7c21fda47dc9a357664ede1100ca8f5f.js",
+    "precache-manifest.0e5288433f823139c8bac358b1d94d25.js": "/precache-manifest.0e5288433f823139c8bac358b1d94d25.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.878bb298.chunk.css.map": "/static/css/main.878bb298.chunk.css.map",
-    "static/js/2.7fb7836f.chunk.js.LICENSE.txt": "/static/js/2.7fb7836f.chunk.js.LICENSE.txt",
+    "static/js/2.117741a1.chunk.js.LICENSE.txt": "/static/js/2.117741a1.chunk.js.LICENSE.txt",
     "static/media/additional-1.jpg": "/static/media/additional-1.f5e644dc.jpg",
     "static/media/additional-1.gif": "/static/media/additional-1.8288f08c.gif",
     "static/media/additional-1@2x.jpg": "/static/media/additional-1@2x.cff17a1a.jpg",
@@ -28,6 +28,8 @@
     "static/media/Teaching.module.css": "/static/media/icon-play.07c8d137.svg",
     "static/media/interactive-hippo-button-tutorial.jpg": "/static/media/interactive-hippo-button-tutorial.49d39d33.jpg",
     "static/media/interactive-hippo-button-tutorial@2x.jpg": "/static/media/interactive-hippo-button-tutorial@2x.3f91da7e.jpg",
+    "static/media/media-1.jpg": "/static/media/media-1.5848a97f.jpg",
+    "static/media/media-1@2x.jpg": "/static/media/media-1@2x.7175bdb2.jpg",
     "static/media/name.svg": "/static/media/name.757180a7.svg",
     "static/media/react-transition-group-svg.jpg": "/static/media/react-transition-group-svg.e6a5ed2a.jpg",
     "static/media/react-transition-group-svg@2x.jpg": "/static/media/react-transition-group-svg@2x.7f9d347c.jpg",
@@ -38,8 +40,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.23041e79.js",
-    "static/js/2.7fb7836f.chunk.js",
+    "static/js/2.117741a1.chunk.js",
     "static/css/main.878bb298.chunk.css",
-    "static/js/main.bea3096f.chunk.js"
+    "static/js/main.b41ad90b.chunk.js"
   ]
 }
