@@ -82,6 +82,8 @@ import kfcAdditional1 from '../img/projects/kfc/additional-1.jpg';
 import kfcAdditional1Retina from '../img/projects/kfc/additional-1@2x.jpg';
 import kfcAdditional2 from '../img/projects/kfc/additional-2.jpg';
 import kfcAdditional2Retina from '../img/projects/kfc/additional-2@2x.jpg';
+import kfcMedia1 from '../img/projects/kfc/media-1.jpg';
+import kfcMedia1Retina from '../img/projects/kfc/media-1@2x.jpg';
 
 const projects = {
   client: [
@@ -96,8 +98,7 @@ const projects = {
       },
       tags: ['Shopify', 'E-Commerce', 'Redesign'],
       description: `
-        <p>I was tasked with helping the client choose a platform that would make showcasing, selling, and updating their products without the need of a developer a breeze.</p>
-        <p>We ended up going with Shopify. I built a custom theme, with some fun micro animations throughout. I also ended up building some UI tools to help update parts of the site that were not easily updatable through the backend without the knowledge of code.</p>
+        <p>I was responsible for advising the client on a platform that had the ability to easily showcase and sell their products while also allowing them easy control of content management.</p>
       `,
       media: [{
         id: 0,
@@ -118,10 +119,9 @@ const projects = {
       processLink: '',
       githubLink: '',
       achievements: [
-        'Helped the client settle on a platform (Shopify) that suited all their requirements',
-        'Created a custom Shopify theme',
-        'Customized the theme to make updating all of the sites data in the backend a breeze for the client',
-        'Built custom UI tools to update non shopify elements',
+        'Advised the client on the best platform for their e-commerce needs (Shopify)',
+        'Developed a custom Shopify theme',
+        'Built custom UI tools to allow the client to manage intricate content changes',
       ],
     },{
       id: 2,
@@ -134,8 +134,7 @@ const projects = {
       },
       tags: ['Redesign', 'Vanilla JS'],
       description: `
-        <p>The client was looking to create a online presence in Canada to showcase their brand.</p>
-        <p>Working closely with the designer we came up with a panel scrolling concept. Being a simple site we decided we'd go at this one without a framework to keep things light.</p>
+        <p>The client wanted to increase their Canadian online brand presence. Working closely with the design team, we devised a panel scrolling concept to showcase their brand history and products.</p>
       `,
       media: [{
         id: 0,
@@ -161,20 +160,20 @@ const projects = {
       processLink: '',
       githubLink: '',
       achievements: [
-        'Built a custom panel scroll snapping site',
-        'Worked closely with the designer on the UX approach for the site',
+        'Built a custom panel scroll-snapping site',
+        'Collaborated closely with the design team to develop the UX',
       ],
     },{
       id: 0,
       company: 'Honda/Acura',
-      projectTitle: 'Many Projects',
+      projectTitle: 'Multiple Projects',
       hoverColor: '#df0033',
       hero: {
         src: hondaThumb,
         src_2x: hondaThumbRetina
       },
       tags: ['.NET', 'React', 'UX'],
-      description: `<p>I had the privilege of working with Honda Canada as a client for many years across many projects. I lead the front-end team and worked closely with the designers on the UI in multiple redesigns of the <a href="https://www.honda.ca/" target="_blank">Honda.ca</a> and <a href="https://www.acura.ca/">Acura.ca</a> properties as well as their other products (<a href="https://motorcycle.honda.ca/" target="_blank">Motorcycles</a>, <a href="https://powerequipment.honda.ca/" target="_blank">Power Equipment</a>, etc.).</p>`,
+      description: `<p>I had the privilege of working with Honda Canada as a client for many years across many projects. I led the front-end team and collaborated with the design team on the UI and UX for multiple redesigns of the Honda.ca and Acura.ca properties as well as their other products (motorcycles, power equipment, etc.).</p>`,
       media: [{
         id: 0,
         type: 'image',
@@ -194,46 +193,10 @@ const projects = {
       processLink: '',
       githubLink: '',
       achievements: [
-        'Shipped over 6 projects in a 5 year period',
-        'Led the front-end team on a few of the projects',
-        'Worked closely with the client on new feature ideas and approaches',
-        'Worked closely with designers on the UI and UX'
-      ],
-    },
-    {
-      id: 4,
-      company: 'KFC',
-      projectTitle: 'E-Commerce',
-      hoverColor: '#870c21',
-      hero: {
-        src: kfcThumb,
-        src_2x: kfcThumbRetina
-      },
-      tags: ['Shopify', 'E-Commerce'],
-      description: `
-        <p>The client came to us with an idea to build a e-commerce store with a VERY tight deadline.</p>
-        <p>To keep things simple and focus on the products we stuck with a grid layout with subtle animations to bring some life to the theme.</p>
-      `,
-      media: [{
-        id: 0,
-        type: 'image',
-        alt: '',
-        src: kfcThumb,
-        src_2x: kfcThumbRetina,
-      }],
-      additionalImages: [{
-        src: kfcAdditional2,
-        src_2x: kfcAdditional2Retina,
-      },{
-        src: kfcAdditional1,
-        src_2x: kfcAdditional1Retina,
-      }],
-      role: 'Developer',
-      projectLink: 'https://colonelandco.ca/',
-      processLink: '',
-      githubLink: '',
-      achievements: [
-        'Built a custom Shopify theme with a very tight deadline',
+        'Shipped over 6 projects in a 5-year period',
+        'Led the front-end team for multiple projects',
+        'Advised the client on optimal approaches and implementation of new features',
+        'Collaborated closely with the design team to develop the UI and UX'
       ],
     },{
       id: 1,
@@ -246,8 +209,7 @@ const projects = {
       },
       tags: ['React', 'Gatsby', 'CMS Improvements'],
       description: `
-        <p>The client wanted to fix two problems, the site load times, and the time it takes to update the content.</p>
-        <p>Since the site didn't require any real time data we decide to go with a static site approach, this meant moving the site from .NET over to React/Gatsby. To make the content easier to update we implemented a API that the site utilizes that doesn't require you to touch code to update content.</p>
+        <p>The client wanted to fix two issues: the site loading time and the content update time. Since the site did not require any real-time data, we decided on a static site approach to address the long site loading times, which involved rebuilding the .NET site into React and Gatsby. To simplify the content update process, we developed a custom CMS.</p>
       `,
       media: [{
         id: 0,
@@ -268,8 +230,8 @@ const projects = {
       processLink: '',
       githubLink: '',
       achievements: [
-        'Rebuilt .NET site to utilize Gatsby and React',
-        'Took the update times for new content down from 2 hours to 15 minutes',
+        'Reduced the site loading time from 7 seconds to 1 second by rebuilding the previous .NET site into React and Gatsby',
+        'Reduced content update time from 2 hours to 15 minutes by developing a custom CMS',
       ],
     },
     {
@@ -281,10 +243,9 @@ const projects = {
         src: gripLimitedThumb,
         src_2x: gripLimitedThumbRetina
       },
-      tags: ['Redesign', 'React', 'CMS Tooling'],
+      tags: ['Redesign', 'React', 'CMS Tools'],
       description: `
-        <p>Still stuck in the Flash days, Grip Limited wanted to redo their website with a focus on showcasing the client work while showing through some of their company personality.</p>
-        <p>The site was built in React with a Django backend to make the dynamic content easier to update. I also built UI tools to allow designers to layout the dynamic pages without needing to touch any code.</p>
+        <p>When I joined Grip Limited, the website was still stuck in the Flash days. The company wanted to rebuild their website to showcase their client work while maintaining their company personality.</p>
       `,
       media: [{
         id: 0,
@@ -305,8 +266,51 @@ const projects = {
       processLink: '',
       githubLink: '',
       achievements: [
-        'Rebuilt agency site using React',
-        'Built custom UI tools to allow non-techical folks to layout client pages',
+        'Rebuilt the front-end using React',
+        'Built custom UI tools for non-techical colleagues to template new client pages',
+      ],
+    },{
+      id: 4,
+      company: 'KFC',
+      projectTitle: 'Maintenance & Feature Updates',
+      hoverColor: '#870c21',
+      hero: {
+        src: kfcThumb,
+        src_2x: kfcThumbRetina
+      },
+      tags: ['.NET', 'CMS Improvements', 'Shopify'],
+      description: `
+        <p>I was responsible for updating, maintaining, and improving a previous version of this web property. I collaborated closely with the design team on the UX, built and implemented new features, and developed custom tools to streamline content updates.</p>
+      `,
+      media: [{
+        id: 0,
+        type: 'image',
+        alt: '',
+        src: kfcThumb,
+        src_2x: kfcThumbRetina,
+      },
+      {
+        id: 0,
+        type: 'image',
+        alt: '',
+        src: kfcMedia1,
+        src_2x: kfcMedia1Retina,
+      }],
+      additionalImages: [{
+        src: kfcAdditional2,
+        src_2x: kfcAdditional2Retina,
+      },{
+        src: kfcAdditional1,
+        src_2x: kfcAdditional1Retina,
+      }],
+      role: 'Developer',
+      projectLink: 'http://kfc.ca/',
+      processLink: '',
+      githubLink: '',
+      achievements: [
+        'Built custom tools to enhance the content update process',
+        'Implemented new features and sections within existing .NET code',
+        'Built a custom Shopify theme for an accompanying e-commerce site'
       ],
     }
   ],
